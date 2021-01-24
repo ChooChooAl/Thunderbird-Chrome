@@ -1,11 +1,9 @@
 Thunderbird Chrome folder - customizations to colors, icons, spacing and fonts for Thunderbird V68+
 
-<b>Installation</b>
-
+<b>Installation</b><br>
 Put the entire chrome folder in your profile.  If there is one already there, rename it first.
 
-<b>The Files</b>
-
+<b>The Files</b><br>
 userChrome.css is a shell the simply imports other css files to make all this happen.
 
 The colors folder contains the 6 color.css files that are selected in userChrome.css by uncommenting the desired theme color.  See samples in the Screen-Shots folder.
@@ -28,14 +26,14 @@ There are two user-chrome*css files.  One that uses Thunderbird's built in threa
 
 Import the userChrome-all.css file that will do my highlighting, or userChrome-basic.css that uses Thunderbird's highlighting.  Using Thunderbird's highlighting allows you to change tag colors and the highlighting follows your changes.  My highlighting is hard coded with the default colors and does not honor any color changes in settings.
 
-<b>Why all the message files?</b>
+<b>Why all the message files?</b><br>
 message-384x192.xcf is the GIMP file I used initially for message.png scaled 3 times larger for detail and must be rescaled before exporting to a png file.
 message-144x72.xcf is the GIMP file scalled properly and some of the paper and envelope icons cleaned up after scaling kinda distored the images.
 message.svg and message2.svg are not used, but are here if you work in inkscape easier that GIMP.
 message-plain.xcf is very plain line drawn graphics if you are not into colorful graphics.
 message.png -- the ultimate end to this all, must be 144x72 px no matter which item above you use and how you export it.
 
-<b>Tweaks</b>
+<b>Tweaks</b><br>
 As the chrome folder is setup, this is how I use it in my system.
 With minor changes, this setup can go from version 68 to 78+ or from Linux to Windows.
 There are minor issues between all 4 possible combinations of setup but for the whole it works.  Notes were made in sizes.css that seem to apply to my various Windows and Linux systems.  I use a variety of 1366x768, 1600x900 and 1920x1080 screens on my systems and VMs.
