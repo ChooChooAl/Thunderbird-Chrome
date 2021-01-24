@@ -15,7 +15,7 @@ The PNG folder contains the individual icons used to build the images/images.png
 
 The SVG folder contains the individual svg icons used to build the images/compose.svg file.
 
-There are several GIMP files and svg files used to build the message.png file.  The ultimate end is to build a 144x72 px image the is used by message-icons.css to decorate the header pane.  They show the read,unread,replied,forwarded etc status of the individual headers in the header pane.
+There are several GIMP files and svg files used to build the message.png file.  The ultimate end is to build a 144x72 px image that is used by message-icons.css to decorate the header pane.  They show the read,unread,replied,forwarded etc status of the individual headers in the header pane.
 
 sizes.css controls most of the font sizes and item heights like toolbars and tabs.
 Look here to change fonts/spacing first.  Not much is hard coded in userChrome*.css.
