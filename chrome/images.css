@@ -4,6 +4,7 @@
 /************************************************************************/
 /* first row are buttons unique to the compose toolbar customize window */
 #button-contacts, #quoteButton, #cut-button, #copy-button, #paste-button,
+#calendar-print-button, #task-print-button,
 #appmenu_accountmgr, #appmenu_activityManager, #appmenu_addons, #appmenu_Add-Ons,
 #appmenu-copy, #appmenu-editmenu-copy, #appmenu_customize, #appmenu-cut, #appmenu-editmenu-cut,
 #appmenu_emptyTrash, #appmenu_filters, #appmenu_find, #appmenu_help, #appmenu_msgAttachmentMenu,
@@ -73,6 +74,7 @@ toolbarpaletteitem .hdrForwardButton, #button-forward { -moz-image-region: rect(
 #button-compact { -moz-image-region: rect(1024px 256px 1280px 0px) !important; }
 #button-contacts { -moz-image-region: rect(2560px 256px 2816px 0px) !important; }
 #quoteButton { -moz-image-region: rect(2560px 512px 2816px 256px) !important; }
+#calendar-print-button, #task-print-button,
 #button-print { -moz-image-region: rect(2048px 512px 2304px 256px) !important; }
 #button-stop { -moz-image-region: rect(2304px 512px 2560px 256px) !important; }
 #button-file { -moz-image-region: rect(1024px 1280px 1280px 1024px) !important; }
