@@ -1,6 +1,6 @@
 Thunderbird Chrome folder - customizations to colors, icons, spacing and fonts for Thunderbird V68+
 
-<b>Installation<b>
+<b>Installation</b>
 
 Put the entire chrome folder in your profile.  If there is one already there, rename it first.
 
