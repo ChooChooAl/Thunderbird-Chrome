@@ -1,6 +1,6 @@
 All the icons in this folder can be changed.  Just keep the # order intact.
 
-montage `ls [0-5][0-9]*.png |sort` -background transparent -tile 5x11 -geometry 256x256 ../images.png
+montage `ls [0-5][0-9]*.png |sort` -background transparent -tile 5x11 -geometry 256x256 ../images.png<br>
 montage `ls [0-5][0-9]*.png |sort` -background white -tile 11x5 -geometry 256x256 ../../Screen-Shots/icons.png
 
 The above commands will re-create the images.png file that userChrome.css uses.
