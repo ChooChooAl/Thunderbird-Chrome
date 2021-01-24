@@ -4,7 +4,7 @@ Thunderbird Chrome folder - customizations to colors, icons, spacing and fonts f
 Put the entire chrome folder in your profile.  If there is one already there, rename it first.
 
 <b>The Files</b><br>
-userChrome.css is a shell the simply imports other css files to make all this happen.
+userChrome.css is a shell that simply imports other css files to make all this happen.
 
 The colors folder contains the 6 color.css files that are selected in userChrome.css by uncommenting the desired theme color.  See samples in the Screen-Shots folder.
 The colors can be adjusted in those css files if you don't like the current ones.  Is the blue to bright, then pick a different color and edit the blue.css file.
