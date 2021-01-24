@@ -1,0 +1,53 @@
+/*Salmon - Orange
+100%      #FFFFFF        95%         #FFF5E6        90%       #FFEBCC         85%       #FFE0B3       80%      #FFD699
+78%       #FFCF87        75% 	    #FFCC80        70%       #FFC266          65%  	    #FFB84D       60% 	  #FFAD33
+55% 	   #FFA31A        50%	        #FF9900        45% 	    #E68A00         40% 		#CC7A00      35%       #B36B00
+30% 	   #995C00        25% 	    #804D00        20% 		#663D00         15% 		#4D2E00      10%       #331F00
+5%  		  #1A0F00*/
+
+:root {
+  --tabs-unfocus: #FFA31A;            /* 55% */
+  --tabs-text-unfocus: #CCCCCC;
+  --tabs-hover: #ffad33;            /* 60% */
+  --tabs-text-hover: #000000;
+  --tabs-focus: #FFFFFF;          /* 85% */
+  --tabs-text-focus: #000000;
+
+  --today-pane1: #FFEBCC;       /* 90% */
+  --today-pane2: #FFD699;       /* 80% */
+  --today-pane3: #FFC266;       /* 70% */
+  --today-pane-text: #000000;
+
+  --tree-hover: #804d00;           /* 25% */
+  --tree-hover-text: #FFFFFF;
+  --tree-focus: #e68a00;           /* 45% */
+  --tree-focus-text: #FFFFFF;
+
+  --body-dark: #FFCF87;            /* 78% */
+  --body-light: #fff5e6;           /* 95% */
+  --body-menu: #fff5e6;            /* 95% */
+
+  --mini-calendar: #ffe0b3;        /* 85% */
+  --cal-splitter: #4d2e00;         /* 15% */
+  --msg-splitter: #4d2e00;         /* 15% */
+
+  --zebra-stripe: #FFD5A1;         /* 87%   just a bit lighter than accent mail  +2 clicks in golor3  */
+  --accent-email: #ffd699;         /* 80% */
+  --msg-header-labels: #0759ab;    /* now blue like the stars*/
+  --status-bar: #ffebcc;           /* 90% */
+  --tabs-bar: #ffebcc;             /* 90% */
+
+  --text-statusbar: #000000;       /* black */
+  --text-toolbar: #000000;
+  --text-menu: #000000;
+  --text-menubar: #FFFFFF;
+
+  --text-hasmail: #FF0000;         /* red */
+  --text-hasmail2: #FFFF88;        /* yellow */
+  --column-names: #E0E0E0;         /* gray */
+  --column-names-text: #000000;
+  --compose-menu-bar: #B36B00;  /* 35% */
+
+  --abook-title: #502020;
+  --abook-title-text: #FFFFFF;
+}

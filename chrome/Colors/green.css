@@ -1,0 +1,52 @@
+/* custom green color tweaks
+100% 	   #FFFFFF        95%       #EBFAEB        90%       #D6F5D6        85%       #C2F0C2        80%       #ADEBAD
+75%       #99E699        70%       #85E085        65%       #70DB70        60%       #5CD65C        55%       #47D147
+50%       #33CC33        45%       #2EB82E        40%       #29A329        35%       #248F24        30%       #1F7A1F
+25%       #196619         20%       #145214        15%        #0F3D0F        10%       #0A290A        5%       #051405*/
+
+:root {
+  --tabs-unfocus: #47D147;            /* 55% */
+  --tabs-text-unfocus: #CCCCCC;
+  --tabs-hover: #70DB70;            /* 65% */
+  --tabs-text-hover: #000000;
+  --tabs-focus: #FFFFFF;          /* 85% */
+  --tabs-text-focus: #000000;
+
+  --today-pane1: #D6F5D6;       /* 90% */
+  --today-pane2: #ADEBAD;       /* 80% */
+  --today-pane3: #85E085;       /* 70% */
+  --today-pane-text: #000000;
+
+  --tree-hover: #2eb82e;           /* 45% */
+  --tree-hover-text: #FFFFFF;
+  --tree-focus: #196619;           /* 25% */
+  --tree-focus-text: #FFFFFF;
+
+  --body-dark: #c2f0c2;            /* 80% */
+  --body-light: #f0fff0;           /* 95%+ */
+  --body-menu: #EBFAEB;            /* 95% */
+
+  --mini-calendar: #C2F0C2;        /* 85% */
+  --cal-splitter: #0f3d0f;         /* 15% */
+  --msg-splitter: #0f3d0f;         /* 15% */
+
+  --zebra-stripe: #C6F5C6;         /* 87%   just a bit lighter than accent mail  +2 clicks in golor3  */
+  --accent-email: #c2f0c2;         /* 85% */
+  --msg-header-labels: #0759ab;    /* now blue like the stars*/
+  --status-bar: #d6f5d6;           /* 90% */
+  --tabs-bar: #f0fff0;             /* 95%+ */
+
+  --text-statusbar: #000000;       /* black */
+  --text-toolbar: #000000;
+  --text-menu: #000000;
+  --text-menubar: #FFFFFF;
+
+  --text-hasmail: #FF0000;         /* red */
+  --text-hasmail2: #88FF88;        /* green */
+  --column-names:#E0E0E0;          /*gray */
+  --column-names-text: #000000;    /* black */
+  --compose-menu-bar: #248F24;  /* 35% */
+
+  --abook-title: #502020;
+  --abook-title-text: #FFFFFF;
+}

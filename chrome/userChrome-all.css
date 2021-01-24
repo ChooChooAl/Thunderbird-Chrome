@@ -1,0 +1,493 @@
+/* Set and tested for Linux Mint @ 1600x900 resolution*/
+/* Note that class items are #Name, and id items are .Name  */
+/* Linux Mint */
+/* Updated 12-15-20    New Icons for POP3 server.  1 stand alone, +1 in images.png.   */
+/*  Since so many things depend on the position of icons in images.png,
+    the new one had to be placed at the end thus the name xpop3.email.png
+    also the readme.txt was corrected for the new montage command to rebuild images.png*/
+/*  12-15-20 move all extra images and code in Old folder to clear clutter */
+/*  01-14-21 Tried to remove all the custom highlighting for tree rows and put in separate css
+    This did not work.  importing that file first, disturbs the proper distribution of highlights
+    in the overall scheme of code.   So I am left with having two userChrome*.css files
+    one for all code and one for the basic code (using TB default highlighting for TAGS */
+
+
+* { font-size: var(--default-font-size) !important;
+    font-family: Arial, Ubuntu !important;}
+
+#button-send {
+    background-color: var(--body-light) !important;
+    color: black !important;
+    font-weight: bold !important; }
+
+.emailStar[hascard="true"] { fill: red !important; }
+
+/********************************************************************************************/
+/* Color changes, some from http://forums.mozillazine.org/viewtopic.php?f=39&t=2436557    */
+/*******************************************************************************************/
+
+/* right click items like servers in foldertree, right click on toolbar. */
+menupopup {
+	-moz-appearance: none !important;
+	color: var(--text-menu) !important;
+	background-color: var(--body-light) !important; }
+menupopup > menuitem { margin: 1px !important; font-size: 1.1em !important;}
+
+/* Menu font  Top of the window File/Edit etc  and the dropdown of each item.  Not right click */
+menubar > menu {
+    font-size: var(--menu-bar-font-size) !important; }
+
+#today-header {
+    background-color: var(--today-pane1) !important;       /* 90% */
+    color: var(--today-pane-text) !important; }
+#tomorrow-header {  /* events sidebar in mail */
+    background-color: var(--today-pane2) !important;  /* 80% */
+    color: var(--today-pane-text) !important; }
+#nextweek-header {
+    background-color: var(--today-pane3) !important;  /* 70% */
+    color: var(--today-pane-text) !important; }
+
+
+/* make lines for threaded msgs solid black    more extensive work done in tree.css*/
+tree[seltype="cell"] > treechildren::-moz-tree-line,
+tree[seltype="text"] > treechildren::-moz-tree-line,
+treechildren::-moz-tree-line { border: 1px solid black !important; }
+
+/* ::::: lines connecting cells ::::: */
+#folderTree treechildren::-moz-tree-line { visibility: visible; }
+
+
+/* Accent the entire Delete button  */
+/*#button-delete {
+     color: white !important;
+     background-color: var(--tree-hover) !important;
+     font-weight: normal !important; } */
+
+
+/**********************************************************************
+   Address book changes specific.
+***********************************************************************/
+.CardViewHeading {  /* this covers all the headings in the address book display at the bottom */
+    background-color: var(--tree-hover) !important;
+    color: var(--tree-hover-text) !important; }
+#CardTitle { background-color: var(--abook-title) !important;
+    color: var(--abook-title-text) !important;
+    font-weight: normal !important;
+    padding-left: 60px !important;}
+#CardViewInnerBox {
+    background-color: var(--body-light) !important;
+    font-weight: normal !important;
+    font-size: var(--abDisplay-font-size) !important; }
+
+/************************************************************************************/
+/*   Account Properties    Only things changed here    */
+/************************************************************************************/
+#am-main-title,
+#AccountCentralTitle {
+     background-color: var(--tabs-focus) !important;
+     color: var(--tabs-text-focus) !important;
+     border: 2px solid black !important;
+     height: 30px !important; }
+
+.acctCentralRow {
+    margin-inline-start: 2px !important;
+    font-size: 100% !important; }
+
+.acctCentralText {
+    padding-inline-start: 45px;
+    margin-top: .1em;
+    margin-bottom: .1em;
+    min-height: 20px; }
+
+spacer.big { display: none !important; }
+
+
+
+/****************************************************************************/
+/* Main hamburger menu the w/h works.  */
+/****************************************************************************/
+.panel-subview-body,
+#appMenu-toolsView,
+#appMenu-mainViewItems {
+    background-color: var(--body-menu) !important; }
+
+.panel-header {
+    background-color: var(--accent-email) !important; }
+
+/* top toolbar on mail page */
+.toolbarbutton-1 .toolbarbutton-icon { width: 30px !important;   height: 30px !important; }
+toolbar[mode="text"] .button-appmenu .toolbarbutton-icon { display: -moz-box !important; }
+
+/* make the menu a bit more narrow */
+#appMenu-popup panelview, #customizationui-widget-multiview panelview:not([extension]) {
+    min-width: 40px !important;
+    max-width: 25em !important; }
+
+.subviewbutton .toolbarbutton-icon,
+.subviewbutton-iconic .toolbarbutton-icon,
+.subviewbutton-nav .toolbarbutton-icon {
+    width: 24px !important;
+    height: 24px !important; }
+
+.subview-subheader,
+panelview .toolbarbutton-1,
+.subviewbutton,
+.widget-overflow-list .toolbarbutton-1 {
+    -moz-appearance: none !important;
+    min-height: 20px !important;
+    padding: 3px 12px !important; }
+
+
+
+
+/****************************************************************************/
+/*  Message screen, mail and mail preview, and folder-tree */
+/****************************************************************************/
+
+/*This list is for the thread tree listbox header field names.*/
+#starCol,#threadCol,#unreadButtonColHeader,#recipientCol,#junkStatusCol,#receivedCol,#statusCol,#sizeCol,
+#tagsCol,#accountCol,#priorityCol,#totalCol,#idCol,#statusCol,#unreadCol,#senderCol,#locationCol,#dateCol,
+#attachmentCol,#subjectCol,#flaggedCol,#correspondentCol {
+     -moz-appearance: none !important; /* Overrides mozilla's setting */
+     background-color: var(--column-names) !important;
+     color: var(--column-names-text) !important;
+     font-weight: normal !important; }
+
+
+.menubar-text {
+     -moz-appearance: none !important;
+     color: var(--text-menubar) !important;
+     font-weight: normal !important; }
+
+
+
+/***************************************************************************************/
+/*-------------- MENU BAR emails ---   ---------------------*/
+/***************************************************************************************/
+#results_box, #compose-toolbox { /* compose windows side bar with email addresses */
+        background-color: var(--body-dark) !important; }
+#compose-toolbar-menubar2, #addrbook-toolbar-menubar2, #mail-toolbar-menubar2 {
+        background-color: var(--compose-menu-bar) !important; }
+
+.mail-toolbar-menubar2 {
+    background-color: var(--body-dark) !important;
+    color: black !important;
+    font-size: var(--mail-toolbar-menubar2-font-size) !important; }
+
+.main-header-area { background-color: var(--body-light) !important; } /* header on message pane */
+
+
+/****************************************************************************/
+/*-------------------------- TABS -------------------------------------*/
+/****************************************************************************/
+
+.tab-text {
+    font-size: var(--tab-text-font-size) !important;
+    font-weight: normal !important;
+    padding-bottom: 2px !important; }
+
+.tab-text[selected="true"] {
+    font-weight: normal !important; }
+
+.tabmail-tab {
+    max-width: 600px !important;
+    min-width: 300px !important;
+    margin-top: 0px !important;
+    border: 1px solid black !important; }
+
+/* height of tabs themselves   one less than #tabs-toolbar*/
+.tabmail-tab > .tab-stack > .tab-content > .tab-label-container {
+    border: 0px solid !important;
+    height: var(--tabmail-tab-height) !important;
+    margin-top: 0px !important; }
+
+.tabmail-tab .tab-content { /*  this is the standard   */
+     background-color: var(--tabs-unfocus) !important;
+     color: var(--tabs-text-unfocus) !important; }
+
+.tabmail-tab:hover .tab-content {
+     background-color: var(--tabs-hover) !important;
+     color: var(--tabs-text-hover) !important; }
+
+.tabmail-tab[selected="true"] .tab-content {
+     background-color: var(--tabs-focus) !important;
+     color: var(--tabs-text-focus) !important; }
+
+.tab-icon-image {
+    height: var(--tabmail-icons) !important;
+    width: var(--tabmail-icons) !important; }
+
+
+
+/*******************************************************************************************/
+/* moves the close button left and accents the 'x'.  The right-hand tab is missing part of the border.
+   I thought this would fix it, but it does not.  Still, I like the box around the 'x' */
+/*******************************************************************************************/
+.tab-content > .tab-close-button {
+    margin-inline-start: 1px;
+    margin-inline-end: 0px;
+    border: 0px solid black !important; }
+
+/**********************************************************/
+.mail-toolbox { color: var(--text-toolbar) !important;  /* main toolbar in email window */
+    background-color: var(--body-dark) !important; }
+
+
+/**********************************************************/
+/* MESSAGE PANE  */
+/**********************************************************/
+/* Generic color background for a lot of lists */
+tree { background-color: var(--body-light) !important; }
+
+#threadpane-splitter {
+    border-bottom: 3px solid var(--msg-splitter) !important;
+    collapse: false !important;
+    collapsed: false !important; }
+#folderpane_splitter {
+    border-inline-start: 3px solid var(--msg-splitter) !important;
+    margin-inline-end: -2px !important; }
+#folderpane_splitter, #threadpane-splitter:not([orient="vertical"]) {
+    -moz-appearance: none !important;
+    width: 3px; !important; }
+
+#msgHeaderView .headerValue /* Message pane header "From"/"Subject"/"TO" label */
+     {color: black !important; /* From/Subject/To data text color */
+     font-weight:bold !important; }
+
+#msgHeaderView {/* Message pane header "Date"/"Time" */
+     color: black !important;
+     font-weight:bold !important; }
+
+#msgHeaderView .headerName /* Message header pane labels */
+     {color: var(--msg-header-labels) !important; }
+
+/* colorize the header pane just the first line, from email address */
+#CompactHeader_collapsed2LHeaderViewFirstLine {
+     background-color: var(--accent-email) !important; }
+
+#expandedHeadersTopBox {
+     background-color: var(--accent-email) !important;
+     height: 20px !important; }
+
+#expandedBoxSpacer { height: 0px !important; }
+
+#tabs-toolbar { /* too small in height and a scrollbar appears on right */
+    height: var(--tabs-toolbar-height) !important;
+    background-color: var(--tabs-bar) !important; }
+
+#status-bar {
+    -moz-appearance: none !important;
+    background-color: var(--status-bar) !important;
+    color: var(--text-statusbar) !important;
+    height: 26px !important; }
+
+#threadCols treecol {
+    background-color: var(--status-bar) !important;
+    color: var(--text-statusbar) !important;
+    height: 28px !important;
+    border: 1px solid var(--tree-focus) !important;
+    padding-left: 10px !important; }
+
+
+/**********************************************************/
+/* keep in this order for the folder tree
+***********************************************************/
+#folderTree treechildren::-moz-tree-cell-text { font-size: var(--folder-tree-font) !important; }
+#folderTree treechildren::-moz-tree-row { height: var(--folder-treechildren-row) !important; margin-bottom: var(--folder-tree-margin) !important; }
+
+#threadTree treechildren::-moz-tree-cell-text { font-size: var(--thread-tree-font) !important; }
+#threadTree treechildren::-moz-tree-row { height: var(--thread-treechildren-row) !important; }
+
+#folderTree treechildren::-moz-tree-row {
+	-moz-appearance: none !important;
+	border: none !important;
+	color: var(--text-menu) !important;
+	background-color: var(--body-light) !important; }
+#folderTree treechildren::-moz-tree-row(selected) {
+	border: none !important;
+	background-color: var(--tree-focus) !important; }
+#folderTree treechildren::-moz-tree-row(selected, focus) {            /* Focused background bar */
+     background-color: var(--tree-focus) !important; }
+#folderTree treechildren::-moz-tree-cell-text(selected),                  /* need to keep this in */
+#folderTree treechildren::-moz-tree-cell-text(selected, focus) {     /* Focused font */
+     color: var(--tree-focus-text) !important; }
+#folderTree treechildren::-moz-tree-row(hover) {
+	border: none !important;
+	background-color: var(--tree-hover) !important; }
+#folderTree treechildren::-moz-tree-cell-text(hover) {
+     color: var(--tree-hover-text) !important; }
+/* make account with new mail colorful and bold */
+#folderTree treechildren::-moz-tree-cell-text(isServer-true, biffState-NewMail) {
+	font-weight: bold !important; color: var(--text-hasmail) !important; }
+
+/* in this order for the thread tree*/
+#threadTree treechildren::-moz-tree-row {
+	-moz-appearance: none !important;
+    color: var(--text-menu) !important;
+	background-color: var(--body-light) !important; }
+#threadTree treechildren::-moz-tree-row(odd) {
+  	background-color: var(--zebra-stripe) !important; }
+#threadTree treechildren::-moz-tree-row(selected) {
+	border: none !important;
+	background-color: var(--tree-focus) !important; }
+#threadTree treechildren::-moz-tree-row(selected, focus) {          /* Focused background bar */
+     background-color: var(--tree-focus) !important; }
+#threadTree treechildren::-moz-tree-cell-text(selected, focus) {    /* Focused font */
+     color: var(--tree-focus-text) !important; }
+
+#threadTree treechildren::-moz-tree-row(hover) {
+	border: none !important;
+	background-color: var(--tree-hover) !important; }
+#threadTree treechildren::-moz-tree-cell-text(hover) {
+     color: var(--tree-hover-text) !important; }
+/* now fix for tags */
+/*red*/
+#threadTree treechildren::-moz-tree-cell(T_24label1) { background-color: #FF9999 !important; }
+#threadTree treechildren::-moz-tree-cell-text(T_24label1) { color: #000 !important; }
+#threadTree treechildren::-moz-tree-cell(T_24label1, selected) { background-color: #FF6666 !important;}  /* #FF0000 */
+#threadTree treechildren::-moz-tree-cell-text(T_24label1, selected) { color: #FFF !important; }
+/*orange*/
+#threadTree treechildren::-moz-tree-cell(T_24label2) { background-color: #FFCA7A !important; }
+#threadTree treechildren::-moz-tree-cell-text(T_24label2) { color: #000 !important; }
+#threadTree treechildren::-moz-tree-cell(T_24label2, selected) { background-color: #FFA64D  !important;}  /* #FF8000 */
+#threadTree treechildren::-moz-tree-cell-text(T_24label2, selected) { color: #FFF !important; }
+/*green*/
+#threadTree treechildren::-moz-tree-cell(T_24label3) { background-color: #82FF82 !important; }
+#threadTree treechildren::-moz-tree-cell-text(T_24label3) { color: #000 !important; }
+#threadTree treechildren::-moz-tree-cell(T_24label3, selected) { background-color: #00D900 !important;} /* #009900 */
+#threadTree treechildren::-moz-tree-cell-text(T_24label3, selected) { color: #FFF !important; }
+/*blue*/
+#threadTree treechildren::-moz-tree-cell(T_24label4) { background-color: #A6A6FF !important; }
+#threadTree treechildren::-moz-tree-cell-text(T_24label4) { color: #000 !important; }
+#threadTree treechildren::-moz-tree-cell(T_24label4, selected) { background-color: #6666FF !important;}  /* #3333FF */
+#threadTree treechildren::-moz-tree-cell-text(T_24label4, selected) { color: #FFF !important; }
+/*purple*/
+#threadTree treechildren::-moz-tree-cell(T_24label5) { background-color: #FFB4FF !important; }
+#threadTree treechildren::-moz-tree-cell-text(T_24label5) { color: #000 !important; }
+#threadTree treechildren::-moz-tree-cell(T_24label5, selected) { background-color: #E64DE6 !important;} /* 993399 */
+#threadTree treechildren::-moz-tree-cell-text(T_24label5, selected) { color: #FFF !important; }
+
+/* this added for/from Windows */
+#folderTree treechildren::-moz-tree-row(hover),
+#folderTree treechildren::-moz-tree-row(selected),
+#threadTree treechildren::-moz-tree-row(hover),
+#threadTree treechildren::-moz-tree-row(selected) {
+    margin-bottom: 0px !important; }
+
+
+/**********************************************************/
+/* Event list
+***********************************************************/
+#tomorrow-header .agenda-checkbox,
+#today-header .agenda-checkbox,
+#nextweek-header .agenda-checkbox {background-color: var(--body-dark) !important; }
+#mini-day-box {background-color: var(--body-dark) !important; }
+#agenda-toolbar {background-color: var(--body-light) !important; }
+
+
+/**********************************************************/
+/* calendar coloring
+***********************************************************/
+#calsidebar_splitter { background-color: var(--cal-splitter) !important; }
+#minimonth-splitter { background-color: var(--body-dark) !important; }
+#calMinimonth {background-color: var(--mini-calendar) !important; }
+
+/* highlights the "Calendar Name" Line in lightning */
+hbox[class=tree-scrollable-columns] {
+     -moz-appearance: none !important;
+     background-color: var(--body-dark) !important; }
+
+#calendar-nav-control, #calendar-listtree-pane, #calendar-list-pane, calendar-list-tree {
+	-moz-appearance:none !important;
+    background-color: var(--body-light) !important; }
+treechildren::-moz-tree-row {
+	-moz-appearance:none !important;
+	background-color: var(--body-light) !important; }
+treechildren::-moz-tree-cell-text {
+	-moz-appearance:none !important;
+	color: var(--text-menu) !important; }
+treechildren::-moz-tree-row(selected) {
+	-moz-appearance:none !important;
+	background-color: var(--tree-focus) !important; }
+treechildren::-moz-tree-cell-text(selected) {
+	-moz-appearance:none !important;
+	color: var(--tree-focus-text) !important; }
+treechildren::-moz-tree-row(hover) {
+	-moz-appearance:none !important;
+	background-color: var(--tree-hover) !important; }
+treechildren::-moz-tree-cell-text(hover) {
+	-moz-appearance:none !important;
+	color: var(--tree-hover-text) !important; }
+
+/******************************************************************************/
+/***  This has to be after other cell-text declarations
+       so the text-hasmail color will survive and display  ****/
+/********************************************************************************/
+/* Change the colour of unread messages and containing folders but if hasmail & selected, make it white */
+treechildren::-moz-tree-cell-text(folderNameCol, hasUnreadMessages-true) {
+	color: var(--text-hasmail) !important; font-weight: bold !important; }
+treechildren::-moz-tree-cell-text(folderNameCol, hasUnreadMessages-true,selected) {
+	color: var(--text-hasmail2) !important; font-weight: bold !important; }
+
+
+
+/**********************************************************/
+/* Compose window decorate the compose message window   */
+/**********************************************************/
+#composeToolbar2 {background-color: var(--body-dark) !important; }
+
+#MsgHeadersToolbar  { background-color: var(--body-light) !important; }
+
+#addressbookList:not(:-moz-focusring) {
+background-color: var(--tabs-focus) !important; }
+
+/****************************************************************************/
+/* This does an overal enlargment of fonts and things like 'settings' dialogs also show bigger */
+/******************************************************************************/
+
+/* fix for too-tall dialogue where buttons are not visible, being off the bottom */
+#accountManager { min-height: 36em !important; }
+
+/* expand the attachment name field size on the bottom of preview pane */
+#attachmentBucket, .attachmentBox {min-width: 35em; }
+
+/* Change the font on the tabs, text In Tab Labels and Tool Bar(s) */
+toolbar { font-weight: normal !important; font-size: var(--toolbar-font-size) !important; }
+
+
+.button-appmenu .toolbarbutton-text,
+.button-appmenu .toolbarbutton-menu-dropmarker { display: none !important; }
+
+
+/********************************************************************
+     These lines are here to close up the line spacing
+*********************************************************************/
+/* First closes up the list of addresses side-bar in write,   Second closes up the calendars in the left hand list */
+
+#calendar-list-tree-widget treechildren::-moz-tree-row,
+#abResultsTree treechildren::-moz-tree-row {
+    height: 28px !important;
+/*    margin-bottom: -2px !important;
+    margin-top: 0px !important;
+    padding-top: -1px !important; */
+    font-size: var(--abResultsTree-font-size) !important; }
+
+#calendar-list > richlistitem {   /* this seems to work in Windows.  padding, height, font do nothing in windows*/
+/*    margin-bottom: -2px !important;
+    margin-top: -3px !important;  */
+    height: 28px !important; }
+
+
+
+/* lets clean up the compose window */
+separator.thin:not([orient="vertical"]) {
+    height: 0em !important; }
+
+#toButton,  #ccButton,  #bccButton {
+    -moz-appearance: none !important;
+    background-color: var(--body-light) !important;
+    padding-top: 0px !important;
+    height: 30px !important;}
+
+#toButton[disabled="false"]:hover,  #ccButton[disabled="false"]:hover,  #bccButton[disabled="false"]:hover {
+    background-color: var(--compose-menu-bar) !important; }

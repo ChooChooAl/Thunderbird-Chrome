@@ -1,0 +1,24 @@
+:root {
+  --default-font-size: 1.0em;
+
+  --folder-tree-font: 1.2em;                 /* 1.2 linux   1.0 windows */
+  --folder-treechildren-row: 30px;          /* 30 linux   28 windows */
+  --folder-tree-margin: -3px;               /* -6 in windows, -3 in linux   */
+
+  --thread-tree-font: 1.25em;                /* 1.25 linux   1.1 windows */
+  --thread-treechildren-row: 30px;
+
+  --abResultsTree-font-size: 1.2em;     /* address book */
+  --abDisplay-font-size: 1.25em;         /* address book display info at bottom */
+  --menu-bar-font-size: 1.0em;
+  --mail-toolbar-menubar2-font-size: 1.4em;
+
+  --tabs-toolbar-height: 38px;              /* one more than tab height, and a few above the icons */
+  --tabmail-tab-height: 37px;
+  --tabmail-icons: 32px;
+  --tab-text-font-size: 1.0em;
+
+  --toolbar-font-size: 1.2em;
+
+  --appmenu-icons: 24px;
+}

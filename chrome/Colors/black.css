@@ -1,0 +1,51 @@
+/* Black - Gray
+100   #FFFFFF     95   #F1F1F1     90   #E4E4E4     85   #D6D6D6     80   #C9C9C9     75   #BBBBBB     70   #AEAEAE
+65   #A1A1A1     60   #939393     55  #868686     50  #787878     45  #6B6B6B     40  #5D5D5D     35  #505050
+30  #434343     25  #353535     20  #282828     15  #1A1A1A     10  #0D0D0D     5  #000000      */
+
+:root {
+  --tabs-unfocus: #868686;            /* 55 */
+  --tabs-text-unfocus: #CCCCCC;
+  --tabs-hover: #939393;            /* 60% */
+  --tabs-text-hover: #000000;
+  --tabs-focus: #FFFFFF;          /* 90% */
+  --tabs-text-focus: #000000;
+
+  --today-pane1: #DDDDDD;       /* 90% */
+  --today-pane2: #CCCCCC ;       /* 80% */
+  --today-pane3: #AAAAAA;       /* 70% */
+  --today-pane-text: #000000;
+
+  --tree-hover: #666666;           /* 45% */
+  --tree-hover-text: #FFFFFF;
+  --tree-focus: #444444;           /* 35% */
+  --tree-focus-text: #FFFFFF;
+
+  --body-dark: #888888;            /* 75% */
+  --body-light: #E4E4E4;           /* 90% */
+  --body-menu: #DDDDDD;            /* 85% */
+
+  --mini-calendar: #CCCCCC;        /* 85% */
+  --cal-splitter: #111111 ;         /* 15% */
+  --msg-splitter: #111111 ;         /* 15% */
+
+  --zebra-stripe: #E0E0E0;         /* 87%   just a bit lighter than accent mail  +2 clicks in golor3  */
+  --accent-email: #DDDDDD;         /* 85% */
+  --msg-header-labels: #0759AB;    /* now blue like the stars*/
+  --status-bar: #CCCCCC;           /* 90% */
+  --tabs-bar: #DDDDDD;             /* 90% */
+
+  --text-statusbar: #000000;       /* black */
+  --text-toolbar: #FFFFFF;
+  --text-menu: #000000;
+  --text-menubar: #FFFFFF;
+
+  --text-hasmail: #FF0000;         /* red */
+  --text-hasmail2: #FFFF88;        /* yellow */
+  --column-names: #E0E0E0;         /* gray */
+  --column-names-text: #000000;
+  --compose-menu-bar: #333333;  /* 25% */
+
+  --abook-title: #502020;
+  --abook-title-text: #FFFFFF;
+}

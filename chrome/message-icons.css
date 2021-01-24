@@ -1,0 +1,51 @@
+/* ..... subject column       top, right, bottom, left
+   a lot of the icons in the SVG are not used  like:   read,new - middle row last item, just can't be true.   */
+
+treechildren::-moz-tree-image(subjectCol) {
+  -moz-margin-end: 2px !important;
+  list-style-image: url("images/message.png") !important;
+  -moz-image-region: rect(0 24px 24px 0) !important; }            /* top 1st */
+treechildren::-moz-tree-image(subjectCol, dummy) {
+  list-style-image: none !important; }
+treechildren::-moz-tree-image(subjectCol, read) {
+  -moz-image-region: rect(24px 24px 48px 0) !important; }         /* middle 1st */
+treechildren::-moz-tree-image(subjectCol, forwarded) {
+  -moz-image-region: rect(0 72px 24px 48px) !important; }         /* top 3rd */
+treechildren::-moz-tree-image(subjectCol, read, forwarded) {
+  -moz-image-region: rect(24px 72px 48px 48px) !important; }      /* middle 3rd */
+treechildren::-moz-tree-image(subjectCol, replied) {
+  -moz-image-region: rect(0 48px 24px 24px) !important; }        /* top 2nd */
+treechildren::-moz-tree-image(subjectCol, read, replied) {
+  -moz-image-region: rect(24px 48px 48px 24px) !important; }      /* middle 2nd */
+treechildren::-moz-tree-image(subjectCol, replied, forwarded) {
+  -moz-image-region: rect(0 96px 24px 72px) !important; }         /* top 4th */
+treechildren::-moz-tree-image(subjectCol, read, replied, forwarded) {
+  -moz-image-region: rect(24px 96px 48px 72px) !important; }      /* middle 4th */
+treechildren::-moz-tree-image(subjectCol, new) {
+  -moz-image-region: rect(0 144px 24px 120px) !important; }         /* top 6th */
+treechildren::-moz-tree-image(subjectCol, news) {
+  -moz-image-region: rect(48px 24px 72px 0) !important; }         /* bottom 1st */
+treechildren::-moz-tree-image(subjectCol, news, forwarded) {
+  -moz-image-region: rect(48px 72px 72px 48px) !important; }      /* bottom 3rd */
+treechildren::-moz-tree-image(subjectCol, news, replied) {
+  -moz-image-region: rect(48px 48px 72px 24px) !important; }      /* bottom 2nd */
+treechildren::-moz-tree-image(subjectCol, news, replied, forwarded) {
+  -moz-image-region: rect(48px 96px 72px 72px) !important; }      /* bottom 4th */
+treechildren::-moz-tree-image(subjectCol, news, new) {
+  -moz-image-region: rect(48px 144px 72px 120px) !important; }      /* bottom 6th */
+treechildren::-moz-tree-image(subjectCol, rss, forwarded) {
+  -moz-image-region: rect(0 72px 24px 48px) !important; }              /* top 3rd */
+treechildren::-moz-tree-image(subjectCol, rss, new) {
+  -moz-image-region: rect(0 48px 24px 24px) !important; }         /* top 2nd */
+
+/* IMPORTANT: make sure the imap-deleted column always comes after the replied/forwarded style rules.
+   This ensures that we show that the message is marked as deleted over status information. */
+
+treechildren::-moz-tree-image(subjectCol, imapdeleted) {
+  list-style-image: url("images/message.png") !important;
+  -moz-image-region: rect(0 120px 24px 96px) !important; }         /* top 5th */
+
+#sizeCol,#unreadCol,#totalCol { text-align: right !important; }
+
+/* Make sure the min height is small so we can resize the pane vertically. */
+#messagepanebox { min-height: 10px !important; height: 0px !important; }

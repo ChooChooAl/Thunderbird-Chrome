@@ -1,0 +1,52 @@
+/*Steel Blue Gray
+100%    #FFFFFF     95%     #F0F5F5      90%    #E0EBEB     85%     #D1E0E0     80%     #C2D6D6
+75%     #B3CCCC     70%     #A3C2C2     65% 	  #94B8B8     60% 	#85ADAD    55%     #75A3A3
+50% 	#669999	  45%  	#5C8A8A    40% 	  #527A7A     35% 	#476B6B     30%     #3D5C5C
+25% 	#334D4D     20%   	#293D3D     15% 	  #1F2E2E      10% 	#141F1F       5% 	  #0A0F0F */
+
+:root {
+  --tabs-unfocus: #75A3A3;            /* 55 */
+  --tabs-text-unfocus: #E4E4E4;
+  --tabs-hover: #85ADAD;            /* 60% */
+  --tabs-text-hover: #000000;
+  --tabs-focus: #FFFFFF;          /* 90% */
+  --tabs-text-focus: #000000;
+
+  --today-pane1: #E0EBEB;       /* 90% */
+  --today-pane2: #C2D6D6;       /* 80% */
+  --today-pane3: #A3C2C2;       /* 70% */
+  --today-pane-text: #000000;
+
+  --tree-hover: #5C8A8A;           /* 45% */
+  --tree-hover-text: #FFFFFF;
+  --tree-focus: #476B6B;           /* 35% */
+  --tree-focus-text: #FFFFFF;
+
+  --body-dark: #B3CCCC;            /* 75% */
+  --body-light: #F2F7F7;           /* 97% */
+  --body-menu: #F0F5F5;            /* 95% */
+
+  --mini-calendar: #D1E0E0;        /* 85% */
+  --cal-splitter: #1F2E2E;         /* 15% */
+  --msg-splitter: #1F2E2E;         /* 15% */
+
+  --zebra-stripe: #D6E6E6;         /* 87%   just a bit lighter than accent mail  +2 clicks in golor3  */
+  --accent-email: #D1E0E0;         /* 85% */
+  --msg-header-labels: #0759AB;    /* now blue like the stars*/
+  --status-bar: #E0EBEB;           /* 90% */
+  --tabs-bar: #E0EBEB;             /* 90% */
+
+  --text-statusbar: #000000;       /* black */
+  --text-toolbar: #000000;
+  --text-menu: #000000;
+  --text-menubar: #FFFFFF;
+
+  --text-hasmail: #FF0000;         /* red */
+  --text-hasmail2: #FFFF88;        /* yellow */
+  --column-names: #E0E0E0;         /* gray */
+  --column-names-text: #000000;
+  --compose-menu-bar: #476B6B;  /* 35% */
+
+  --abook-title: #AA0000;
+  --abook-title-text: #FFFFFF;
+}

@@ -1,0 +1,27 @@
+/* Quote Levels Colors */
+	blockquote[type=cite] {
+		color: navy !important; background-color: RGB(245,245,245) !important; 	}
+	blockquote[type=cite] blockquote {
+	   color: maroon !important; background-color: RGB(235,235,235) !important; 	}
+	blockquote[type=cite] blockquote blockquote {
+	   color: green !important; background-color: RGB(225,225,225) !important;	}
+	blockquote[type=cite] blockquote blockquote blockquote {
+	   color: purple !important; background-color: RGB(215,215,215) !important;	}
+	blockquote[type=cite] blockquote blockquote blockquote blockquote {
+	   color: teal !important; background-color: RGB(205,205,205) !important;	}
+	blockquote[type=cite] blockquote blockquote blockquote blockquote blockquote {
+	   color: darkblue !important; background-color: RGB(200,200,200) !important;	}
+	blockquote[type=cite] blockquote blockquote blockquote blockquote blockquote blockquote {
+	   color: darkblue !important; background-color: RGB(195,195,195) !important;	}
+
+/* remove the / * or _ tags from news text messages */
+.moz-txt-tag { display: none; }
+
+
+/* Change display color of text and links in signature */
+.moz-txt-sig, .moz-signature {
+  color: red !important;
+}
+.moz-txt-sig > a, .moz-signature > a {
+  color: blue !important;
+}
