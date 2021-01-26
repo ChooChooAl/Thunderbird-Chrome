@@ -187,7 +187,7 @@ treechildren::-moz-tree-image(folderNameCol, serverType-imap) {
 treechildren::-moz-tree-image(folderNameCol, serverType-pop3) {
     list-style-image: url("./images/pop-email.svg") !important; }
 treechildren::-moz-tree-image(folderNameCol, serverType-nntp) {
-    list-style-image: url("./images/news24.svg") !important;  /* had to make 24x24 to fit on account mgr */
+    list-style-image: url("./images/news.svg") !important;  /* had to make 24x24 to fit on account mgr */
     -moz-image-region: rect(0px 24px 24px 0px) !important; }
 
 
