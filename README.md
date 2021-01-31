@@ -15,7 +15,7 @@ The PNG folder contains the individual icons used to build the images/images.png
 
 The SVG folder contains the individual svg icons used to build the images/compose.svg file.
 
-When looking at properties of servers, the icon was scaled large and only the to was showing, the 64x64 size.  I found that the 3 icons used for 'serverType-imap' -pop3 and -nntp had to be 24x24.  All the other icons seem to scale the way I want them to but these 3.  So I bent to the will of the gods and made 3 png icons just for those 3 items and it fixed the displays.  I prefer to keep icons large enough for detail even knowing when reduced by the program they would lose quality.
+When looking at properties of servers, the icon was scaled large and only the top was showing, the 64x64 size issue.  I found that the 3 icons used for 'serverType-imap' -pop3 and -nntp had to be 24x24.  All the other icons seem to scale the way I want them to but these 3.  So I bent to the will of the gods and made 3 png icons just for those 3 items and it fixed the displays.  I prefer to keep icons large enough for detail even knowing when reduced by the program they would lose quality.
 
 There are several GIMP files and svg files used to build the message.png file.  The ultimate end is to build a 144x72 px image that is used by message-icons.css to decorate the header pane.  They show the read,unread,replied,forwarded etc status of the individual headers in the header pane.
 
