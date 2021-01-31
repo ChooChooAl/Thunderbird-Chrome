@@ -166,7 +166,7 @@ treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox) { -moz-image-r
 #button-abdelete { list-style-image: url("./images/trash.svg") !important; }
 
 /* enlarge and colorize the column picker icon at the end of thread pane's column headers */
-.tree-columnpicker-icon { list-style-image: url("./images/columnpicker.svg");
+.tree-columnpicker-icon { list-style-image: url("./images/columnpicker.svg") !important;
     fill: red !important;
     width: 24px !important; height: 24px !important; }
 
