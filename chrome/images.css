@@ -111,7 +111,7 @@ toolbarpaletteitem .hdrArchiveButton, #button-archive { -moz-image-region: rect(
 #cut-button, #appmenu-cut, #appmenu-editmenu-cut { -moz-image-region: rect(256px 512px 512px 256px) !important; }  /* appmenu-cut.png */
 #copy-button, #appmenu-copy, #appmenu-editmenu-copy { -moz-image-region: rect(0px 1280px 256px 1024px) !important; } /* appmenu-copy.png */
 #paste-button, #appmenu-paste, #appmenu-editmenu-paste { -moz-image-region: rect(512px 512px 768px 256px) !important; } /* appmenu-paste.png */
-#appmenu_accountmgr { -moz-image-region: rect(1024px 1024px 1280px 768px) !important; }  /* email.png */
+#appmenu_accountmgr { -moz-image-region: rect(1024px 1024px 1280px 768px) !important; }
 #appmenu_addons, #appmenu_Add-Ons { -moz-image-region: rect(0px 768px 256px 512px) !important; } /* appmenu-addons.png */
 #appmenu_customize { -moz-image-region: rect(256px 256px 512px 0px) !important; } /* appmenu-customize.png */
 #appmenu_preferences, .tabmail-tab[type="preferencesTab"] { -moz-image-region: rect(512px 256px 768px 0px) !important; }   /* appmenu-options.png */
