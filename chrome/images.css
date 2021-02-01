@@ -7,10 +7,11 @@
 #calendar-print-button, #task-print-button,
 #appmenu_accountmgr, #appmenu_activityManager, #appmenu_addons, #appmenu_Add-Ons,
 #appmenu-copy, #appmenu-editmenu-copy, #appmenu_customize, #appmenu-cut, #appmenu-editmenu-cut,
-#appmenu_emptyTrash, #appmenu_filters, #appmenu_find, #appmenu_help, #appmenu_msgAttachmentMenu,
-#appmenu_new, #appmenu-paste, #appmenu-editmenu-paste, #appmenu_preferences,
-#appmenu_print, #appmenu_saveAs, #appmenu_tasksMenu, #button-addons, #button-address,
-#button-getmsg, #button-newmsg, #button-reply,  #CompactHeader_button-starMessages,
+#appmenu_emptyTrash, #appmenu_filters, #appmenu_filtersCmd, #appmenu_find, #appmenu_help,
+#appmenu_msgAttachmentMenu,
+#appmenu_new, #appmenu-paste, #appmenu-editmenu-paste, #appmenu_preferences,#appmenu_addressBook,
+#appmenu_print_popup, #appmenu_print, #appmenu_saveAs, #appmenu_tasksMenu, #button-addons,
+#button-address, #button-getmsg, #button-newmsg, #button-reply,  #CompactHeader_button-starMessages,
 #lightning-button-calendar, #MarkThreadReadButton, #NextThreadUnreadButton,
 .tabmail-tab[type="preferencesTab"],
 .tabmail-tab[type="folder"][SpecialFolder="Archive"][ServerType="imap"] .tab-icon-image,
@@ -78,7 +79,7 @@ toolbarpaletteitem .hdrForwardButton, #button-forward { -moz-image-region: rect(
 #button-print { -moz-image-region: rect(2048px 512px 2304px 256px) !important; }
 #button-stop { -moz-image-region: rect(2304px 512px 2560px 256px) !important; }
 #button-file { -moz-image-region: rect(1024px 1280px 1280px 1024px) !important; }
-#button-nextMsg, #button-previousMsg[chromedir="rtl"] { -moz-image-region: rect(1792px 512px 2048px 256px) !important; } /* nextmsg */
+#button-nextMsg, #button-previousMsg[chromedir="rtl"] { -moz-image-region: rect(1792px 512px 2048px 256px) !important; }
 #button-previousMsg, #button-nextMsg[chromedir="rtl"] { -moz-image-region: rect(1792px 1280px 2048px 1024px) !important; }
 #button-mark { -moz-image-region: rect(1536px 512px 1792px 256px) !important; }
 #button-goback, #button-goforward[chromedir="rtl"] { -moz-image-region: rect(1280px 1024px 1536px 768px) !important; }
@@ -86,7 +87,7 @@ toolbarpaletteitem .hdrForwardButton, #button-forward { -moz-image-region: rect(
 toolbarpaletteitem .hdrTagButton, #button-tag { -moz-image-region: rect(2304px 768px 2560px 512px) !important; }
 toolbarpaletteitem .hdrArchiveButton, #button-archive { -moz-image-region: rect(768px 512px 1024px 256px) !important; }
 #button-chat { -moz-image-region: rect(768px 1280px 1024px 1024px) !important; }
-#button-chat[unreadMessages="true"] { -moz-image-region: rect(768px 1024px 1024px 768px) !important; } /* chat2 */
+#button-chat[unreadMessages="true"] { -moz-image-region: rect(768px 1024px 1024px 768px) !important; }
 .button-appmenu { -moz-image-region: rect(1536px 1024px 1792px 768px) !important; }
 #qfb-show-filter-bar { -moz-image-region: rect(1280px 256px 1536px 0px) !important; }  /* qfb = Quick Filter Bar */
 #hdrOpenConversationButton, #button-showconversation { -moz-image-region: rect(1024px 512px 1280px 256px) !important; }
@@ -97,24 +98,24 @@ toolbarpaletteitem .hdrArchiveButton, #button-archive { -moz-image-region: rect(
 #button-addons { -moz-image-region: rect(0px 768px 256px 512px) !important; }
 #button-getmsg { -moz-image-region: rect(1280px 768px 1536px 512px) !important; }
 #button-newmsg { -moz-image-region: rect(1536px 1280px 1792px 1024px) !important; }
-#button-address { -moz-image-region: rect(0px 256px 256px 0px) !important; }
+#appmenu_addressBook, #button-address { -moz-image-region: rect(0px 256px 256px 0px) !important; }
 #button-reply { -moz-image-region: rect(2048px 1024px 2304px 768px) !important; }
-#appmenu_new { -moz-image-region: rect(256px 1280px 512px 1024px) !important; } /* appmenu_new.png */
-#appmenu_msgAttachmentMenu { -moz-image-region: rect(0px 1024px 256px 768px) !important; } /* appmenu-attachments.png */
-#appmenu_find { -moz-image-region: rect(512px 1280px 768px 1024px) !important; } /* appmenu-search.png */
-#appmenu_print { -moz-image-region: rect(512px 768px 768px 512px) !important; } /* appmenu-print.png */
-#appmenu_saveAs { -moz-image-region: rect(512px 1024px 768px 768px) !important; }  /* appmenu-save.png */
-#appmenu_activityManager { -moz-image-region: rect(0px 512px 256px 256px) !important; }  /* appmenu-activity.png */
-#appmenu_filters { -moz-image-region: rect(256px 768px 512px 512px) !important; }  /* appmenu-filter.png */
-#appmenu_tasksMenu { -moz-image-region: rect(768px 256px 1024px 0px) !important; }  /* appmenu-tools.png */
-#appmenu_help { -moz-image-region: rect(256px 1024px 512px 768px) !important; }    /* appmenu-help.png */
-#cut-button, #appmenu-cut, #appmenu-editmenu-cut { -moz-image-region: rect(256px 512px 512px 256px) !important; }  /* appmenu-cut.png */
-#copy-button, #appmenu-copy, #appmenu-editmenu-copy { -moz-image-region: rect(0px 1280px 256px 1024px) !important; } /* appmenu-copy.png */
-#paste-button, #appmenu-paste, #appmenu-editmenu-paste { -moz-image-region: rect(512px 512px 768px 256px) !important; } /* appmenu-paste.png */
+#appmenu_new { -moz-image-region: rect(256px 1280px 512px 1024px) !important; }
+#appmenu_msgAttachmentMenu { -moz-image-region: rect(0px 1024px 256px 768px) !important; }
+#appmenu_find { -moz-image-region: rect(512px 1280px 768px 1024px) !important; }
+#appmenu_print_popup, #appmenu_print { -moz-image-region: rect(512px 768px 768px 512px) !important; }
+#appmenu_saveAs { -moz-image-region: rect(512px 1024px 768px 768px) !important; }
+#appmenu_activityManager { -moz-image-region: rect(0px 512px 256px 256px) !important; }
+#appmenu_filters, #appmenu_filtersCmd { -moz-image-region: rect(256px 768px 512px 512px) !important; }
+#appmenu_tasksMenu { -moz-image-region: rect(768px 256px 1024px 0px) !important; }
+#appmenu_help { -moz-image-region: rect(256px 1024px 512px 768px) !important; }
+#cut-button, #appmenu-cut, #appmenu-editmenu-cut { -moz-image-region: rect(256px 512px 512px 256px) !important; }
+#copy-button, #appmenu-copy, #appmenu-editmenu-copy { -moz-image-region: rect(0px 1280px 256px 1024px) !important; }
+#paste-button, #appmenu-paste, #appmenu-editmenu-paste { -moz-image-region: rect(512px 512px 768px 256px) !important; }
 #appmenu_accountmgr { -moz-image-region: rect(1024px 1024px 1280px 768px) !important; }
-#appmenu_addons, #appmenu_Add-Ons { -moz-image-region: rect(0px 768px 256px 512px) !important; } /* appmenu-addons.png */
+#appmenu_addons, #appmenu_Add-Ons { -moz-image-region: rect(0px 768px 256px 512px) !important; }
 #appmenu_customize { -moz-image-region: rect(256px 256px 512px 0px) !important; } /* appmenu-customize.png */
-#appmenu_preferences, .tabmail-tab[type="preferencesTab"] { -moz-image-region: rect(512px 256px 768px 0px) !important; }   /* appmenu-options.png */
+#appmenu_preferences, .tabmail-tab[type="preferencesTab"] { -moz-image-region: rect(512px 256px 768px 0px) !important; }
 
 /* just to make the tabs look like the folder tree if any are selected */
 .tabmail-tab[type="folder"][SpecialFolder="Sent"] .tab-icon-image { -moz-image-region: rect(2048px 1280px 2304px 1024px) !important; }
@@ -185,13 +186,13 @@ treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox) { -moz-image-r
 /* these 3 are png individuals and 24x24 so they show up in settings properly
     I can't seem to find the h/w setting to rescale these.  So 24x24 it is.  */
 treechildren::-moz-tree-image(folderNameCol, serverType-imap) {
-    list-style-image: url("./images/email.png") !important;
+    list-style-image: url("./images/PNG/email24.png") !important;
     -moz-image-region: rect(0px 24px 24px 0px) !important; }
 treechildren::-moz-tree-image(folderNameCol, serverType-pop3) {
-    list-style-image: url("./images/pop-email.png") !important;
+    list-style-image: url("./images/PNG/pop-email24.png") !important;
     -moz-image-region: rect(0px 24px 24px 0px) !important; }
 treechildren::-moz-tree-image(folderNameCol, serverType-nntp) {
-    list-style-image: url("./images/news.png") !important;
+    list-style-image: url("./images/PNG/news24.png") !important;
     -moz-image-region: rect(0px 24px 24px 0px) !important; }
 
 
