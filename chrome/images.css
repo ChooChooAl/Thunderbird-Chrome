@@ -1,155 +1,160 @@
 
 /************************************************************************/
-/*     System Icons. Define the images/images.png */
+/*     System Icons. All the PNG images*/
 /************************************************************************/
-/* first row are buttons unique to the compose toolbar customize window */
-#button-contacts, #quoteButton, #cut-button, #copy-button, #paste-button,
-#calendar-print-button, #task-print-button,
-#appmenu_accountmgr, #appmenu_activityManager, #appmenu_addons, #appmenu_Add-Ons,
-#appmenu-copy, #appmenu-editmenu-copy, #appmenu_customize, #appmenu-cut, #appmenu-editmenu-cut,
-#appmenu_emptyTrash, #appmenu_filters, #appmenu_filtersCmd, #appmenu_find, #appmenu_help,
-#appmenu_msgAttachmentMenu,
-#appmenu_new, #appmenu-paste, #appmenu-editmenu-paste, #appmenu_preferences,#appmenu_addressBook,
-#appmenu_print_popup, #appmenu_print, #appmenu_saveAs, #appmenu_tasksMenu, #button-addons,
-#button-address, #button-getmsg, #button-newmsg, #button-reply,  #CompactHeader_button-starMessages,
-#lightning-button-calendar, #MarkThreadReadButton, #NextThreadUnreadButton,
-.tabmail-tab[type="preferencesTab"],
+#appmenu_addressBook, #button-address
+    { list-style-image: url("./images/01-address.png") !important; }
+#appmenu_activityManager
+    { list-style-image: url("./images/02-appmenu-activity.png") !important; }
+#appmenu_addons, #appmenu_Add-Ons, #button-addons
+    { list-style-image: url("./images/03-appmenu-addons.png") !important; }
+#appmenu_msgAttachmentMenu
+    { list-style-image: url("./images/04-appmenu-attachment.png") !important; }
+#appmenu-copy, #appmenu-editmenu-copy, #copy-button
+    { list-style-image: url("./images/05-appmenu-copy.png") !important; }
+#appmenu_customize
+    { list-style-image: url("./images/06-appmenu-customize.png") !important; }
+#cut-button, #appmenu-cut, #appmenu-editmenu-cut
+    { list-style-image: url("./images/07-appmenu-cut.png") !important; }
+#appmenu_filters, #appmenu_filtersCmd
+    { list-style-image: url("./images/08-appmenu-filter.png") !important; }
+#appmenu_help
+    { list-style-image: url("./images/09-appmenu-help.png") !important; }
+#appmenu_new
+    { list-style-image: url("./images/10-appmenu-new.png") !important; }
+#appmenu_preferences, .tabmail-tab[type="preferencesTab"]
+    { list-style-image: url("./images/11-appmenu-options.png") !important; }
+#paste-button, #appmenu-paste, #appmenu-editmenu-paste
+    { list-style-image: url("./images/12-appmenu-paste.png") !important; }
+#appmenu_print_popup, #appmenu_print
+    { list-style-image: url("./images/13-appmenu-print.png") !important; }
+#appmenu_saveAs
+    { list-style-image: url("./images/14-appmenu-save.png") !important; }
+#appmenu_find
+    { list-style-image: url("./images/15-appmenu-search.png") !important; }
+#appmenu_tasksMenu
+    { list-style-image: url("./images/16-appmenu-tools.png") !important; }
+#button-archive, toolbarpaletteitem .hdrArchiveButton,
 .tabmail-tab[type="folder"][SpecialFolder="Archive"][ServerType="imap"] .tab-icon-image,
-.tabmail-tab[type="folder"][SpecialFolder="Junk"] .tab-icon-image,
-.tabmail-tab[type="folder"][SpecialFolder="Trash"] .tab-icon-image,
-.tabmail-tab[type="folder"][SpecialFolder="Drafts"] .tab-icon-image,
-.tabmail-tab[type="folder"][SpecialFolder="Outbox"] .tab-icon-image,
-.tabmail-tab[type="folder"][SpecialFolder="Inbox"] .tab-icon-image,
-.tabmail-tab[type="folder"][SpecialFolder="Sent"] .tab-icon-image,
-.tabmail-tab[type="folder"][ServerType="nntp"] .tab-icon-image,
-.tabmail-tab[type="folder"][ServerType="imap"] .tab-icon-image,
-.tabmail-tab[type="folder"][ServerType="pop3"] .tab-icon-image,
-toolbarpaletteitem .hdrDummyReplyButton,
-toolbarpaletteitem .hdrReplyOnlyButton,
-toolbarpaletteitem .hdrReplyButton,
-toolbarpaletteitem .hdrReplyToSenderButton,
-toolbarpaletteitem .hdrReplyAllButton,
-toolbarpaletteitem .hdrReplyListButton,
-toolbarpaletteitem .hdrFollowupButton, .button-appmenu,
-toolbarpaletteitem .hdrForwardButton, .hdrTrashButton,
-toolbarpaletteitem .hdrTrashButton, .delete-button,
-toolbarpaletteitem .hdrTagButton, #button-tag,
-toolbarpaletteitem .hdrArchiveButton, #button-archive,
-#button-forward, #button-replyall, #button-replylist, #button-followup,
-#button-compact, #button-print, #button-stop, #button-file,
-#button-nextMsg, #button-previousMsg[chromedir="rtl"],
-#button-previousMsg, #button-nextMsg[chromedir="rtl"],
-#button-mark, #button-goback, #button-goforward[chromedir="rtl"],
-#button-goforward, #button-goback[chromedir="rtl"],
-#button-chat, #button-chat[unreadMessages="true"],
-#qfb-show-filter-bar, #hdrOpenConversationButton, #button-showconversation,
-#button-nextUnread, #button-previousUnread[chromedir="rtl"],
-#button-previousUnread, #button-nextUnread[chromedir="rtl"],
-#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Sent),
+#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Archive)
+    { list-style-image: url("./images/17-archive.png") !important;
+    -moz-image-region: rect(0px 256px 256px 0px) !important; }
+#lightning-button-calendar
+    { list-style-image: url("./images/18-calendar.png") !important; }
+#button-chat[unreadMessages="true"]
+    { list-style-image: url("./images/19-chat2.png") !important; }
+#button-chat
+    { list-style-image: url("./images/20-chat.png") !important; }
+#button-compact
+    { list-style-image: url("./images/21-compact.png") !important; }
+#hdrOpenConversationButton, #button-showconversation
+    { list-style-image: url("./images/22-conversation.png") !important; }
 #folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Drafts),
-#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Archive),
-#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Trash),
-#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Junk),
-#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Outbox),
+.tabmail-tab[type="folder"][SpecialFolder="Drafts"] .tab-icon-image
+    { list-style-image: url("./images/23-edit.png") !important;
+    -moz-image-region: rect(0px 256px 256px 0px) !important; }
+#appmenu_accountmgr, .tabmail-tab[type="folder"][ServerType="imap"]
+    { list-style-image: url("./images/24-email.png") !important; }
+#button-file
+    { list-style-image: url("./images/25-file.png") !important; }
+#qfb-show-filter-bar
+    { list-style-image: url("./images/26-quick-filter.png") !important; }
+#button-forward, toolbarpaletteitem .hdrForwardButton
+    { list-style-image: url("./images/27-forward.png") !important; }
+#button-getmsg, .tabmail-tab[type="folder"][SpecialFolder="Inbox"] .tab-icon-image,
 treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox)
-    { list-style-image: url("./images/images.png") !important; }
-
-
-/************************************************************************/
-/*     System Icons.  Now point to the region they are in  */
-/************************************************************************/
-.hdrTrashButton, .tabmail-tab[type="folder"][SpecialFolder="Trash"] .tab-icon-image,
-toolbarpaletteitem .hdrTrashButton, .delete-button, #appmenu_emptyTrash,
-#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Trash) {
-     -moz-image-region: rect(2304px 1024px 2560px 768px) !important; }
-
+    { list-style-image: url("./images/28-getmsg.png") !important;
+    -moz-image-region: rect(0px 256px 256px 0px) !important; }
+#button-goback, #button-goforward[chromedir="rtl"]
+    { list-style-image: url("./images/29-goback.png") !important; }
+#button-goforward, #button-goback[chromedir="rtl"]
+    { list-style-image: url("./images/30-goforward.png") !important; }
+#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Junk),
+.tabmail-tab[type="folder"][SpecialFolder="Junk"] .tab-icon-image
+    { list-style-image: url("./images/31-junk.png") !important;
+    -moz-image-region: rect(0px 256px 256px 0px) !important; }
+#button-mark
+    { list-style-image: url("./images/32-mark.png") !important; }
+/*#MarkThreadReadButton    Add-on, don't change icon.
+    { list-style-image: url("./images/33-markthreadread.png") !important;
+    -moz-image-region: rect(0px 256px 256px 0px) !important; } */
+.button-appmenu
+    { list-style-image: url("./images/34-menu.png") !important; }
+#button-newmsg
+    { list-style-image: url("./images/35-newmsg.png") !important; }
+.tabmail-tab[type="folder"][ServerType="nntp"]
+    { list-style-image: url("./images/36-news.png") !important; }
+#button-nextMsg, #button-previousMsg[chromedir="rtl"]
+    { list-style-image: url("./images/37-nextmsg.png") !important; }
+/*#NextThreadUnreadButton,    Add-on, don't change icon */
+#button-nextUnread, #button-previousUnread[chromedir="rtl"]
+    { list-style-image: url("./images/38-next-unread.png") !important;
+    -moz-image-region: rect(0px 256px 256px 0px) !important; }
+#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Outbox),
+.tabmail-tab[type="folder"][SpecialFolder="Outbox"] .tab-icon-image
+    { list-style-image: url("./images/39-outbox.png") !important;
+    -moz-image-region: rect(0px 256px 256px 0px) !important; }
+#button-previousMsg, #button-nextMsg[chromedir="rtl"]
+    { list-style-image: url("./images/40-previousmsg.png") !important; }
+#button-previousUnread, #button-nextUnread[chromedir="rtl"]
+    { list-style-image: url("./images/41-previous-unread.png") !important; }
+#button-print, #calendar-print-button, #task-print-button
+    { list-style-image: url("./images/42-printer.png") !important; }
 toolbarpaletteitem .hdrDummyReplyButton,
 toolbarpaletteitem .hdrReplyOnlyButton,
-toolbarpaletteitem .hdrReplyButton,
 toolbarpaletteitem .hdrReplyToSenderButton,
 toolbarpaletteitem .hdrReplyAllButton,
 toolbarpaletteitem .hdrReplyListButton,
 toolbarpaletteitem .hdrFollowupButton,
-#button-replyall, #button-replylist, #button-followup { -moz-image-region: rect(2048px 768px 2304px 512px) !important; } /* replyall */
-toolbarpaletteitem .hdrForwardButton, #button-forward { -moz-image-region: rect(1280px 512px 1536px 256px) !important; }
-#button-compact { -moz-image-region: rect(1024px 256px 1280px 0px) !important; }
-#button-contacts { -moz-image-region: rect(2560px 256px 2816px 0px) !important; }
-#quoteButton { -moz-image-region: rect(2560px 512px 2816px 256px) !important; }
-#calendar-print-button, #task-print-button,
-#button-print { -moz-image-region: rect(2048px 512px 2304px 256px) !important; }
-#button-stop { -moz-image-region: rect(2304px 512px 2560px 256px) !important; }
-#button-file { -moz-image-region: rect(1024px 1280px 1280px 1024px) !important; }
-#button-nextMsg, #button-previousMsg[chromedir="rtl"] { -moz-image-region: rect(1792px 512px 2048px 256px) !important; }
-#button-previousMsg, #button-nextMsg[chromedir="rtl"] { -moz-image-region: rect(1792px 1280px 2048px 1024px) !important; }
-#button-mark { -moz-image-region: rect(1536px 512px 1792px 256px) !important; }
-#button-goback, #button-goforward[chromedir="rtl"] { -moz-image-region: rect(1280px 1024px 1536px 768px) !important; }
-#button-goforward, #button-goback[chromedir="rtl"] { -moz-image-region: rect(1280px 1280px 1536px 1024px) !important; }
-toolbarpaletteitem .hdrTagButton, #button-tag { -moz-image-region: rect(2304px 768px 2560px 512px) !important; }
-toolbarpaletteitem .hdrArchiveButton, #button-archive { -moz-image-region: rect(768px 512px 1024px 256px) !important; }
-#button-chat { -moz-image-region: rect(768px 1280px 1024px 1024px) !important; }
-#button-chat[unreadMessages="true"] { -moz-image-region: rect(768px 1024px 1024px 768px) !important; }
-.button-appmenu { -moz-image-region: rect(1536px 1024px 1792px 768px) !important; }
-#qfb-show-filter-bar { -moz-image-region: rect(1280px 256px 1536px 0px) !important; }  /* qfb = Quick Filter Bar */
-#hdrOpenConversationButton, #button-showconversation { -moz-image-region: rect(1024px 512px 1280px 256px) !important; }
-#MarkThreadReadButton { -moz-image-region: rect(1536px 768px 1792px 512px) !important; }
-#NextThreadUnreadButton { -moz-image-region: rect(1792px 768px 2048px 512px) !important; }
-#CompactHeader_button-starMessages { -moz-image-region: rect(2304px 256px 2560px 0px) !important; }
-#lightning-button-calendar { -moz-image-region: rect(768px 768px 1024px 512px) !important; }
-#button-addons { -moz-image-region: rect(0px 768px 256px 512px) !important; }
-#button-getmsg { -moz-image-region: rect(1280px 768px 1536px 512px) !important; }
-#button-newmsg { -moz-image-region: rect(1536px 1280px 1792px 1024px) !important; }
-#appmenu_addressBook, #button-address { -moz-image-region: rect(0px 256px 256px 0px) !important; }
-#button-reply { -moz-image-region: rect(2048px 1024px 2304px 768px) !important; }
-#appmenu_new { -moz-image-region: rect(256px 1280px 512px 1024px) !important; }
-#appmenu_msgAttachmentMenu { -moz-image-region: rect(0px 1024px 256px 768px) !important; }
-#appmenu_find { -moz-image-region: rect(512px 1280px 768px 1024px) !important; }
-#appmenu_print_popup, #appmenu_print { -moz-image-region: rect(512px 768px 768px 512px) !important; }
-#appmenu_saveAs { -moz-image-region: rect(512px 1024px 768px 768px) !important; }
-#appmenu_activityManager { -moz-image-region: rect(0px 512px 256px 256px) !important; }
-#appmenu_filters, #appmenu_filtersCmd { -moz-image-region: rect(256px 768px 512px 512px) !important; }
-#appmenu_tasksMenu { -moz-image-region: rect(768px 256px 1024px 0px) !important; }
-#appmenu_help { -moz-image-region: rect(256px 1024px 512px 768px) !important; }
-#cut-button, #appmenu-cut, #appmenu-editmenu-cut { -moz-image-region: rect(256px 512px 512px 256px) !important; }
-#copy-button, #appmenu-copy, #appmenu-editmenu-copy { -moz-image-region: rect(0px 1280px 256px 1024px) !important; }
-#paste-button, #appmenu-paste, #appmenu-editmenu-paste { -moz-image-region: rect(512px 512px 768px 256px) !important; }
-#appmenu_accountmgr { -moz-image-region: rect(1024px 1024px 1280px 768px) !important; }
-#appmenu_addons, #appmenu_Add-Ons { -moz-image-region: rect(0px 768px 256px 512px) !important; }
-#appmenu_customize { -moz-image-region: rect(256px 256px 512px 0px) !important; } /* appmenu-customize.png */
-#appmenu_preferences, .tabmail-tab[type="preferencesTab"] { -moz-image-region: rect(512px 256px 768px 0px) !important; }
+.hdrReplyListButton, .hdrFollowupButton, .hdrSmartReplyButton,
+#button-replyall, #button-replylist, #button-followup
+    { list-style-image: url("./images/43-replyall.png") !important; }
+#button-reply, toolbarpaletteitem .hdrReplyButton
+    { list-style-image: url("./images/44-reply.png") !important; }
+#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Sent),
+.tabmail-tab[type="folder"][SpecialFolder="Sent"] .tab-icon-image
+    { list-style-image: url("./images/45-send.png") !important;
+    -moz-image-region: rect(0px 256px 256px 0px) !important; }
+#CompactHeader_button-starMessages
+    { list-style-image: url("./images/46-star.png") !important; }
+#button-stop
+    { list-style-image: url("./images/47-stop.png") !important; }
+toolbarpaletteitem .hdrTagButton, #button-tag
+    { list-style-image: url("./images/48-tag.png") !important; }
+.tabmail-tab[type="folder"][SpecialFolder="Trash"] .tab-icon-image,
+toolbarpaletteitem .hdrTrashButton, .delete-button, #appmenu_emptyTrash,
+#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Trash)
+    { list-style-image: url("./images/49-trash.png") !important;
+    -moz-image-region: rect(0px 256px 256px 0px) !important; }
+.tabmail-tab[type="folder"][ServerType="pop3"]
+    { list-style-image: url("./images/50-pop-email.png") !important;
+    -moz-image-region: rect(0px 256px 256px 0px) !important; }
+#button-contacts
+    { list-style-image: url("./images/51-contacts.png") !important; }
+#quoteButton
+    { list-style-image: url("./images/52-quote.png") !important; }
 
-/* just to make the tabs look like the folder tree if any are selected */
-.tabmail-tab[type="folder"][SpecialFolder="Sent"] .tab-icon-image { -moz-image-region: rect(2048px 1280px 2304px 1024px) !important; }
-.tabmail-tab[type="folder"][SpecialFolder="Archive"][ServerType="imap"] .tab-icon-image { -moz-image-region: rect(768px 512px 1024px 256px) !important; }
-.tabmail-tab[type="folder"][SpecialFolder="Junk"] .tab-icon-image { -moz-image-region: rect(1536px 256px 1792px 0px) !important; }
-.tabmail-tab[type="folder"][SpecialFolder="Drafts"] .tab-icon-image { -moz-image-region: rect(1024px 768px 1280px 512px) !important; }
-.tabmail-tab[type="folder"][SpecialFolder="Outbox"] .tab-icon-image { -moz-image-region: rect(1792px 1024px 2048px 768px) !important; }
-.tabmail-tab[type="folder"][SpecialFolder="Inbox"] .tab-icon-image { -moz-image-region: rect(1280px 768px 1536px 512px ) !important; }
-.tabmail-tab[type="folder"][ServerType="nntp"] { -moz-image-region: rect(1792px 256px 2048px 0px) !important; }
-.tabmail-tab[type="folder"][ServerType="imap"] { -moz-image-region: rect(1024px 1024px 1280px 768px) !important; }
-.tabmail-tab[type="folder"][ServerType="pop3"] { -moz-image-region: rect(2304px 1280px 2560px 1024px) !important; }
-#button-nextUnread, #button-previousUnread[chromedir="rtl"] { -moz-image-region: rect(1792px 768px 2048px 512px) !important; }
-#button-previousUnread, #button-nextUnread[chromedir="rtl"] { -moz-image-region: rect(2048px 256px 2304px 0px) !important; }
-/*  These decorate the folder tree pane items               */
-#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Sent) { -moz-image-region: rect(2048px 1280px 2304px 1024px) !important; }
-#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Drafts) { -moz-image-region: rect(1024px 768px 1280px 512px) !important; }
-#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Archive) { -moz-image-region: rect(768px 512px 1024px 256px) !important; }
-#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Junk) { -moz-image-region: rect(1536px 256px 1792px 0px) !important; }
-#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Outbox) { -moz-image-region: rect(1792px 1024px 2048px 768px) !important; }
+/* doesn't work, but keep it here for the hell of it */
+.tabmail-tab[type="Add-ons Manager"] .tab-icon-image
+    { list-style-image: url("./images/large/appmenu-addons.png") !important; }
 
 
-/* accent the send button in the compose window */
-#spellingButton, #button-security, #button-save, #button-send, #button-emoji, #button-attach {
-    list-style-image: url("images/compose.svg") !important; }
-#button-send { -moz-image-region: rect(0px 16px 16px 0px) !important; }
-#spellingButton { -moz-image-region: rect(0px 32px 16px 16px) !important; }
-#button-security { -moz-image-region: rect(0px 48px 16px 32px) !important; }
-#button-save { -moz-image-region: rect(0px 64px 16px 48px) !important; }
-#button-emoji { -moz-image-region: rect(0px 80px 16px 64px) !important; }
-#button-attach { -moz-image-region: rect(0px 96px 16px 80px) !important; }
-treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox) { -moz-image-region: rect(1280px 768px 1536px 512px ) !important; }
 
-.tabmail-tab[type="Add-ons Manager"] .tab-icon-image {      /* doesn't work, but keep it here for the hell of it */
-    list-style-image: url("./images/large/appmenu-addons.png") !important; }
+/************************************************************************/
+/*     System Icons. All the SVG images*/
+/************************************************************************/
+#button-send
+    { list-style-image: url("images/send.svg") !important; }
+#spellingButton
+    { list-style-image: url("images/spelling.svg") !important; }
+#button-security
+    { list-style-image: url("images/security.svg") !important; }
+#button-save
+    { list-style-image: url("images/save.svg") !important; }
+#button-emoji
+    { list-style-image: url("images/emoji.svg") !important; }
+#button-attach
+    { list-style-image: url("images/attach.svg") !important; }
 
 /* Icons in the header of the preview pane */
 .hdrJunkButton { list-style-image: url("./images/junk.svg") !important; }
@@ -163,19 +168,16 @@ treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox) { -moz-image-r
 #button-newcard { list-style-image: url("./images/addcontact.svg") !important; }
 #button-newlist { list-style-image: url("./images/addlist.svg") !important; }
 #button-editcard { list-style-image: url("./images/edit.svg") !important; }
-#button-newmessage { list-style-image: url("./images/PNG/email24.png") !important; }
-#button-abdelete { list-style-image: url("./images/trash.svg") !important; }
+.tabmail-tab[type="message"] .tab-icon-image, #button-newmessage
+    { list-style-image: url("./images/email24.png") !important; }
+.hdrTrashButton, #button-abdelete { list-style-image: url("./images/trash.svg") !important; }
 
 /* enlarge and colorize the column picker icon at the end of thread pane's column headers */
 .tree-columnpicker-icon { list-style-image: url("./images/columnpicker.svg") !important;
     fill: red !important;
     width: 24px !important; height: 24px !important; }
-
 .tabmail-tab[type="calendar"] .tab-icon-image {
     list-style-image: url("./images/calendar.svg") !important; }
-.tabmail-tab[type="message"] .tab-icon-image {
-    list-style-image: url("./images/PNG/email24.png") !important; }
-
 #calendar-tab-button, #newMsgButton-calendar-menuitem {
     list-style-image: url("./images/calendar.svg") !important; }
 #task-tab-button, #newMsgButton-task-menuitem {
@@ -184,18 +186,18 @@ treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox) { -moz-image-r
 #calendar-newevent-button { list-style-image: url("./images/event-list.svg") !important; }
 
 /* these 3 are png individuals and 24x24 so they show up in settings properly
-    I can't seem to find the h/w setting to rescale these.  So 24x24 it is.  */
+    I can't seem to find the height/width setting to rescale these.  So 24x24 it is.  */
 treechildren::-moz-tree-image(folderNameCol, serverType-imap) {
-    list-style-image: url("./images/PNG/email24.png") !important;
+    list-style-image: url("./images/email24.png") !important;
     -moz-image-region: rect(0px 24px 24px 0px) !important; }
 treechildren::-moz-tree-image(folderNameCol, serverType-pop3) {
-    list-style-image: url("./images/PNG/pop-email24.png") !important;
+    list-style-image: url("./images/pop-email24.png") !important;
     -moz-image-region: rect(0px 24px 24px 0px) !important; }
 treechildren::-moz-tree-image(folderNameCol, serverType-nntp) {
-    list-style-image: url("./images/PNG/news24.png") !important;
+    list-style-image: url("./images/news24.png") !important;
     -moz-image-region: rect(0px 24px 24px 0px) !important; }
 
-
+#calendar-newtask-button, #extractTaskButton, #task-newtask-button,
 #lightning-button-tasks { list-style-image: url("./images/task-list.svg") !important; }
 toolbarpaletteitem .hdrJunkButton, toolbarpaletteitem .hdrSJunkButton, .junk-button
     { list-style-image: url("./images/junk.svg") !important; }
@@ -207,8 +209,6 @@ toolbarpaletteitem .hdrJunkButton, toolbarpaletteitem .hdrSJunkButton, .junk-but
     list-style-image: url("./images/trash.svg") !important; }
 #calendar-edit-button, #task-edit-button {
     list-style-image: url("./images/edit.svg") !important; }
-#calendar-newtask-button, #extractTaskButton, #task-newtask-button {
-    list-style-image: url("./images/task-list.svg") !important; }
 
 /* 5 menu items that didn't have icons.   Stole the logic from Firefox menu.   */
 #appmenu_File .toolbarbutton-icon {
@@ -227,7 +227,7 @@ toolbarpaletteitem .hdrJunkButton, toolbarpaletteitem .hdrSJunkButton, .junk-but
     height: var(--appmenu-icons) !important;
     background-size: var(--appmenu-icons) !important; }
 #appmenu_messageMenu .toolbarbutton-icon {
-    list-style-image: url("./images/PNG/email24.png") !important;
+    list-style-image: url("./images/email24.png") !important;
     width: var(--appmenu-icons) !important;
     height: var(--appmenu-icons) !important;
     background-size: var(--appmenu-icons) !important; }
@@ -243,8 +243,10 @@ toolbarpaletteitem .hdrJunkButton, toolbarpaletteitem .hdrSJunkButton, .junk-but
 #titlebar-close { background-color: red !important; }
 
 #titlebar-min { margin-left: 10px !important;
-    list-style-image: url("./images/PNG/icon-min.png") !important; }
+    list-style-image: url("./images/icon-min.png") !important; }
 #titlebar-max { margin-left: 10px !important;
-    list-style-image: url("./images/PNG/icon-max.png") !important; }
+    list-style-image: url("./images/icon-max.png") !important; }
 #titlebar-close { margin-left: 10px !important;
-    list-style-image: url("./images/PNG/icon-close.png") !important; }
+    list-style-image: url("./images/icon-close.png") !important; }
+
+/* END */
