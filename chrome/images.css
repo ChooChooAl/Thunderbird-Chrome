@@ -18,7 +18,7 @@
     { list-style-image: url("./images/07-appmenu-cut.png") !important; }
 #appmenu_filters, #appmenu_filtersCmd
     { list-style-image: url("./images/08-appmenu-filter.png") !important; }
-#appmenu_help
+#appmenu_help, #appmenu_openHelp
     { list-style-image: url("./images/09-appmenu-help.png") !important; }
 #appmenu_new
     { list-style-image: url("./images/10-appmenu-new.png") !important; }
@@ -135,6 +135,8 @@ toolbarpaletteitem .hdrTrashButton, .delete-button, #appmenu_emptyTrash,
     { list-style-image: url("./images/51-contacts.png") !important; }
 #quoteButton
     { list-style-image: url("./images/52-quote.png") !important; }
+#appmenu-quit
+    { list-style-image: url("./images/quit.png") !important; }
 
 /* doesn't work, but keep it here for the hell of it */
 .tabmail-tab[type="Add-ons Manager"] .tab-icon-image
