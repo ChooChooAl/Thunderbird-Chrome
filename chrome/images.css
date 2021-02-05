@@ -54,7 +54,8 @@
     { list-style-image: url("./images/23-edit.png") !important;
     -moz-image-region: rect(0px 256px 256px 0px) !important; }
 #appmenu_accountmgr, .tabmail-tab[type="folder"][ServerType="imap"]
-    { list-style-image: url("./images/24-email.png") !important; }
+    { list-style-image: url("./images/24-email.png") !important;
+    -moz-image-region: rect(0px 256px 256px 0px) !important; }
 #button-file
     { list-style-image: url("./images/25-file.png") !important; }
 #qfb-show-filter-bar
@@ -83,7 +84,8 @@ treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox)
 #button-newmsg
     { list-style-image: url("./images/35-newmsg.png") !important; }
 .tabmail-tab[type="folder"][ServerType="nntp"]
-    { list-style-image: url("./images/36-news.png") !important; }
+    { list-style-image: url("./images/36-news.png") !important;
+    -moz-image-region: rect(0px 256px 256px 0px) !important; }
 #button-nextMsg, #button-previousMsg[chromedir="rtl"]
     { list-style-image: url("./images/37-nextmsg.png") !important; }
 /*#NextThreadUnreadButton,    Add-on, don't change icon */
@@ -168,8 +170,10 @@ toolbarpaletteitem .hdrTrashButton, .delete-button, #appmenu_emptyTrash,
 #button-newcard { list-style-image: url("./images/addcontact.svg") !important; }
 #button-newlist { list-style-image: url("./images/addlist.svg") !important; }
 #button-editcard { list-style-image: url("./images/edit.svg") !important; }
-.tabmail-tab[type="message"] .tab-icon-image, #button-newmessage
-    { list-style-image: url("./images/email24.png") !important; }
+#button-newmessage { list-style-image: url("./images/35-newmsg.png") !important; }
+.tabmail-tab[type="message"] .tab-icon-image
+    { list-style-image: url("./images/email24.png") !important;
+    -moz-image-region: rect(0px 24px 24px 0px) !important; }
 .hdrTrashButton, #button-abdelete { list-style-image: url("./images/trash.svg") !important; }
 
 /* enlarge and colorize the column picker icon at the end of thread pane's column headers */
