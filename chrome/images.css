@@ -155,7 +155,7 @@ toolbarpaletteitem .hdrTrashButton, .delete-button, #appmenu_emptyTrash,
     { list-style-image: url("images/spelling.svg") !important; }
 #button-security
     { list-style-image: url("images/security.svg") !important; }
-#button-save
+#button-save, #attachmentSaveAllSingle, #attachmentSaveAllMultiple
     { list-style-image: url("images/save.svg") !important; }
 #button-emoji
     { list-style-image: url("images/emoji.svg") !important; }
