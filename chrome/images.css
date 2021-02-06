@@ -32,7 +32,7 @@
     { list-style-image: url("./images/14-appmenu-save.png") !important; }
 #appmenu_find
     { list-style-image: url("./images/15-appmenu-search.png") !important; }
-#appmenu_tasksMenu
+#appmenu_tasksMenu, #appmenu_devtoolsMenu .toolbarbutton-icon
     { list-style-image: url("./images/16-appmenu-tools.png") !important; }
 #button-archive, toolbarpaletteitem .hdrArchiveButton,
 .tabmail-tab[type="folder"][SpecialFolder="Archive"][ServerType="imap"] .tab-icon-image,
@@ -137,6 +137,8 @@ toolbarpaletteitem .hdrTrashButton, .delete-button, #appmenu_emptyTrash,
     { list-style-image: url("./images/52-quote.png") !important; }
 #appmenu-quit
     { list-style-image: url("./images/quit.png") !important; }
+#appmenu_about
+    { list-style-image: url("./images/info.png") !important; }
 
 /* doesn't work, but keep it here for the hell of it */
 .tabmail-tab[type="Add-ons Manager"] .tab-icon-image
@@ -217,7 +219,7 @@ toolbarpaletteitem .hdrJunkButton, toolbarpaletteitem .hdrSJunkButton, .junk-but
     list-style-image: url("./images/edit.svg") !important; }
 
 /* 5 menu items that didn't have icons.   Stole the logic from Firefox menu.   */
-#appmenu_File .toolbarbutton-icon {
+#appmenu_File .toolbarbutton-icon, #appmenu_Open .toolbarbutton-icon {
     list-style-image: url("./images/menu-file.svg") !important;
     width: var(--appmenu-icons) !important;
     height: var(--appmenu-icons) !important;
