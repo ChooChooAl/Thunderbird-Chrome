@@ -12,7 +12,7 @@
     { list-style-image: url("./images/04-appmenu-attachment.png") !important; }
 #appmenu-copy, #appmenu-editmenu-copy, #copy-button
     { list-style-image: url("./images/05-appmenu-copy.png") !important; }
-#appmenu_customize
+#appmenu_customize /* orange icon   shows right in windows */
     { list-style-image: url("./images/06-appmenu-customize.png") !important; }
 #cut-button, #appmenu-cut, #appmenu-editmenu-cut
     { list-style-image: url("./images/07-appmenu-cut.png") !important; }
@@ -22,7 +22,7 @@
     { list-style-image: url("./images/09-appmenu-help.png") !important; }
 #appmenu_new
     { list-style-image: url("./images/10-appmenu-new.png") !important; }
-#appmenu_preferences, .tabmail-tab[type="preferencesTab"]
+#appmenu_preferences, .tabmail-tab[type="preferencesTab"]  /* black icon */
     { list-style-image: url("./images/11-appmenu-options.png") !important; }
 #paste-button, #appmenu-paste, #appmenu-editmenu-paste
     { list-style-image: url("./images/12-appmenu-paste.png") !important; }
