@@ -1,10 +1,9 @@
-Command line script to generate the composite image, run from the images folder, for github only.
+Command line script to generate the composite image, run from the images folder, for github only.<br>
+montage `ls *.png |sort` -background gray -tile 11x6 -geometry 256x256 ../Screen-Shots/icons.png<br>
 
-montage `ls *.png |sort` -background gray -tile 11x6 -geometry 256x256 ../Screen-Shots/icons.png
+The images folder contains all PNG and SVG images used to decorate the UI.
 
-The above command creates a sample icons.png that is used on github in the front page README.md file.  The images folder contains all PNG and SVG images used to decorate the UI.
-
-3 icons, icon-*.png are used for the toolbar min/max/close buttons when the titlebar is hidden.  In Linux the buttons don't show well without this css code and images.  This is a workaround that must have cropped up due to my adjustmenets (possibly).
+3 icons, icon-*.png are used for the toolbar min/max/close buttons when the titlebar is hidden.  In Linux the buttons don't show well without this css code and images.  This is a workaround that must have cropped up due to my adjustmenets or even an update to Thunderbird itself (possibly).
 
 <b>Note:</b> A lot of the icons are 256x256 but some are as small as 16x16.  In the images.css file some of the icons could be simply pointed to, and some had to have their size defined.  I didn't take time to figure out why some 256x256 png icons would properly scale on their own and others not, it was just simpler to define the image size in the css.
 
