@@ -11,23 +11,23 @@ The colors can be adjusted in those css files if you don't like the current ones
 
 The images folder contains icons used to decorate the UI.
 
-There are several GIMP files and svg files used to build the message.png file.  The ultimate end is to build a 144x72 px image that is used by message-icons.css to decorate the thread pane.  They show the read,unread,replied,forwarded etc status of the individual headers in the thread pane (the top pane when in classic layout mode).
-
-sizes.css controls most of the font sizes and item heights like toolbars and tabs.
-Look here to change fonts/spacing first.  Not much is hard coded in userChrome*.css.
-
-userContent.css is a simple css changing the coloring of the different quote levels when reading.
-
-There are two user-chrome*css files.  One that uses Thunderbird's built in thread highlighting for tags (userChrome-basic.css) and one that uses my own highlighting for TAGS (userChrome-all.css).  I like mine better because the default is color background with white text, where TB uses color text on white, a bit less visible.
-
-Import the userChrome-all.css file that will do my highlighting, or userChrome-basic.css that uses Thunderbird's highlighting.  Using Thunderbird's highlighting allows you to change tag colors and the highlighting follows your changes.  My highlighting is hard coded with the default colors and does not honor any color changes in settings.
-
+The images/GIMP has several GIMP files and svg files used to build the message.png file.  The ultimate end is to build a 144x72 px image that is used by message-icons.css to decorate the thread pane.  They show the read,unread,replied,forwarded etc status of the individual headers in the thread pane (the top pane when in classic layout mode).<br>
 <b>Why all the message files?</b><br>
 message-384x192.xcf is the GIMP file I used initially for message.png scaled 3 times larger for detail and must be rescaled before exporting to a png file.
 message-144x72.xcf is the GIMP file scalled properly and some of the paper and envelope icons cleaned up after scaling kinda distored the images.
 message.svg is not used, but is here if you work in inkscape easier that GIMP.
 message-plain.xcf is very plain line drawn graphics if you are not into colorful graphics.
 message.png -- the ultimate end to this all, must be 144x72 px no matter which item above you use and how you export it.
+
+
+sizes.css controls most of the font sizes and item heights like toolbars and tabs.
+Look here to change fonts/spacing first.  Not much is hard coded in userChrome*.css.
+
+userContent.css is a simple css changing the coloring of the different quote levels when reading.  This file could be deleted if you don't want that feature.
+
+There are two user-chrome*css files.  One that uses Thunderbird's built in thread highlighting for tags (userChrome-basic.css) and one that uses my own highlighting for TAGS (userChrome-all.css).  I like mine better because the default is color background with white text, where TB uses color text on white, a bit less visible.
+
+Import (in the userchrome.css file) the userChrome-all.css file that will do my highlighting, or userChrome-basic.css that uses Thunderbird's highlighting.  Using Thunderbird's highlighting allows you to change tag colors and the highlighting follows your changes.  My highlighting is hard coded with the default colors and does not honor any color changes in settings.
 
 <b>Tweaks</b><br>
 As the chrome folder is setup, this is how I use it in my system.
@@ -42,4 +42,4 @@ Example of the different colors currently available.
 Example of the icons used.
 ![](icons.png)
 
-Jan 2021
+Feb 2021
