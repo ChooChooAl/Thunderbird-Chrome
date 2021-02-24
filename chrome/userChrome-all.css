@@ -430,7 +430,6 @@ treechildren::-moz-tree-cell-text(folderNameCol, hasUnreadMessages-true,selected
 	color: var(--text-hasmail2) !important; font-weight: bold !important; }
 
 
-
 /**********************************************************/
 /* Compose window decorate the compose message window   */
 /**********************************************************/
