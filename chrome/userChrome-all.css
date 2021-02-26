@@ -340,6 +340,10 @@ tree { background-color: var(--body-light) !important; }
 	background-color: var(--tree-hover) !important; }
 #threadTree treechildren::-moz-tree-cell-text(hover) {
      color: var(--tree-hover-text) !important; }
+/* if bold does not work well to highlight text in thread, then colorize it. */
+#threadTree treechildren::-moz-tree-cell-text(unread) { color: #FF0000 !important; }
+#threadTree treechildren::-moz-tree-cell-text(unread,hover) { color: #FFC4C4 !important; }
+
 /* now fix for tags */
 /*red*/
 #threadTree treechildren::-moz-tree-cell(T_24label1) { background-color: #FF9999 !important; }
