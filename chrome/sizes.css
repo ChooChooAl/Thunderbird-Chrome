@@ -3,7 +3,7 @@
     then other font sizes seem to multiply the default.  At least in ver 78+.
     Didn't have this issue with Version 68.10.
     So a default of 1.3 might be nice for one field, but 1.3 also in thread-tree will make it huge.
-    So you have to use default sparingly. */
+    So you have to use default sparingly.   I set it to 1 and use others. */
 
   --default-font-size: 1.0em;
 
