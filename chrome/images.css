@@ -38,7 +38,7 @@
     { list-style-image: url("./images/09-appmenu-help.png") !important; }
 #appmenu_new
     { list-style-image: url("./images/10-appmenu-new.png") !important; }
-#appmenu_preferences, .tabmail-tab[type="preferencesTab"]  /* black icon */
+#appmenu_preferences, .tabmail-tab[type="preferencesTab"] .tab-icon-image /* black icon */
     { list-style-image: url("./images/11-appmenu-options.png") !important; }
 #paste-button, #appmenu-paste, #appmenu-editmenu-paste
     { list-style-image: url("./images/12-appmenu-paste.png") !important; }
@@ -101,7 +101,7 @@
     { list-style-image: url("./images/34-menu.png") !important; }
 #button-newmsg
     { list-style-image: url("./images/35-newmsg.png") !important; }
-.tabmail-tab[type="folder"][ServerType="nntp"]
+.tabmail-tab[type="folder"][ServerType="nntp"] .tab-icon-image
     { list-style-image: url("./images/36-news.png") !important;
     -moz-image-region: rect(0px 256px 256px 0px) !important; }
 #button-nextMsg, #button-previousMsg[chromedir="rtl"]
